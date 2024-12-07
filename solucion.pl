@@ -1,4 +1,4 @@
-se pide que agregue a la base de conocimientos la siguiente informaccion:
+%se pide que agregue a la base de conocimientos la siguiente informaccion:
 /*
 juan vive en una casa de 120 metros cuadrados
 nico vive en un 3 ambientes con 2 baños al igual que alf, pero alf tiene un baño solo
