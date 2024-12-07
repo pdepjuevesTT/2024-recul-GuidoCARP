@@ -110,8 +110,9 @@ tasacion(fer,60000).
 %siempre debe comprar una propiedad
 
 comprarConPlata(Plata,Propiedades,PlataRestante):-
-    findall(Valor, tasacion(_,Valor), Tasaciones),
-    sublista(Tasaciones,Propiedades),
-    sumlist(Propiedades,Total),
+    findall(Valor, tasacion(_, Valor), Tasaciones),
+    sublista(Tasaciones, Propiedades),
+    Propiedades \= [], % Asegurarse de que la lista no esté vacía
+    sumlist(Propiedades, Total),
     Total =< Plata,
     PlataRestante is Plata - Total.
